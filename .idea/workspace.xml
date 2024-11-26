@@ -4,37 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f07b92-3333-4df2-9734-d573d2a5c68b" name="Changes" comment="adding classes genereted from staruml">
-      <change afterPath="$PROJECT_DIR$/assets/Enemy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Enemy1Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Enemy2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Enemy2Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level1Bg6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2Bg0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2Bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2Bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2Bg3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Level2Bg4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Menu.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/MenuBg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Player1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Player1Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Player2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Player2Shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/Score.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/ScoreBg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
+    <list default="true" id="a8f07b92-3333-4df2-9734-d573d2a5c68b" name="Changes" comment="Creating asset folder&#10;Inserting all assets&#10;Creating the menu: background, sound and fonts&#10;Creating the const file">
+      <change afterPath="$PROJECT_DIR$/code/EnemyShoot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/EntitiyMediator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/PlayerShoot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Const.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Const.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/background.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/entityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -73,16 +61,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.menu.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Windows/PYTHON/pythonjogo/assets",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Level.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__level&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows/PYTHON/pythonjogo/assets&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\PYTHON\pythonjogo\assets" />
@@ -124,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731021334509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creating asset folder&#10;Inserting all assets&#10;Creating the menu: background, sound and fonts&#10;Creating the const file">
+      <option name="closed" value="true" />
+      <created>1731118533927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731118533927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial commit" />
     <MESSAGE value="adding classes genereted from staruml" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding classes genereted from staruml" />
+    <MESSAGE value="Creating asset folder&#10;Inserting all assets&#10;Creating the menu: background, sound and fonts&#10;Creating the const file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating asset folder&#10;Inserting all assets&#10;Creating the menu: background, sound and fonts&#10;Creating the const file" />
   </component>
 </project>
