@@ -7,6 +7,7 @@ C_WHITE = (255, 255, 255)
 C_YELLOW = (255, 255, 0)
 C_GREEN = (0, 128, 0)
 C_CYAN = (0, 128, 128)
+C_BLACK = (0, 0, 0)
 
 # M
 MENU_OPTION = ('NEW GAME 1P',
@@ -28,14 +29,18 @@ ENTITIY_SPEED = {
     'Level1Bg1': 1,
     'Level1Bg2': 2,
     'Level1Bg3': 3,
-    'Level1Bg4': 4,
-    'Level1Bg5': 5,
-    'Level1Bg6': 6,
     'Level2Bg0': 0,
     'Level2Bg1': 1,
     'Level2Bg2': 2,
     'Level2Bg3': 3,
     'Level2Bg4': 4,
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
+    'Level3Bg4': 4,
+    'Level3Bg5': 5,
+
     'Player1': 3,
     'Player1Shot': 1,
     'Player2': 3,
@@ -51,14 +56,18 @@ ENTITY_HEALTH = {
     'Level1Bg1': 999,
     'Level1Bg2': 999,
     'Level1Bg3': 999,
-    'Level1Bg4': 999,
-    'Level1Bg5': 999,
-    'Level1Bg6': 999,
     'Level2Bg0': 999,
     'Level2Bg1': 999,
     'Level2Bg2': 999,
     'Level2Bg3': 999,
     'Level2Bg4': 999,
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
+    'Level3Bg4': 999,
+    'Level3Bg5': 999,
+
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -70,8 +79,8 @@ ENTITY_HEALTH = {
 
 }
 ENTITY_SHOOT_DELAY = {
-    'Player1': 20,
-    'Player2': 15,
+    'Player1': 30,
+    'Player2': 30,
     'Enemy1': 100,
     'Enemy2': 200,
 }
@@ -80,14 +89,18 @@ ENTITY_DAMAGE = {
     'Level1Bg1': 0,
     'Level1Bg2': 0,
     'Level1Bg3': 0,
-    'Level1Bg4': 0,
-    'Level1Bg5': 0,
-    'Level1Bg6': 0,
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Level3Bg5': 0,
+
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -105,13 +118,18 @@ ENTITY_SCORE = {
     'Level1Bg2': 0,
     'Level1Bg3': 0,
     'Level1Bg4': 0,
-    'Level1Bg5': 0,
-    'Level1Bg6': 0,
     'Level2Bg0': 0,
     'Level2Bg1': 0,
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Level3Bg5': 0,
+
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -137,15 +155,15 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
 
 #T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 5000
+TIMEOUT_LEVEL = 50000
 # S
-SPAWN_TIME = 3000
+SPAWN_TIME = 1200
 
 SCORE_POS = {
     'Title': (WIN_WIDHT / 2, 50),
-    'EnterName': (WIN_WIDHT / 2,80),
+    'EnterName': (WIN_WIDHT / 2, 80),
     'Label': (WIN_WIDHT / 2, 90),
-    'Name': (WIN_WIDHT / 2, 110),
+    'Name': (WIN_WIDHT / 2, 110),  # Ajuste a posição vertical aqui
     0: (WIN_WIDHT / 2, 110),
     1: (WIN_WIDHT / 2, 130),
     2: (WIN_WIDHT / 2, 150),
@@ -156,5 +174,35 @@ SCORE_POS = {
     7: (WIN_WIDHT / 2, 250),
     8: (WIN_WIDHT / 2, 270),
     9: (WIN_WIDHT / 2, 290),
-
 }
+
+# Em code/Const.py
+C_RED = (255, 0, 0)  # Cor para a mensagem de "Game Over"
+
+
+# Posições de texto para a tela de Game Over
+GAME_OVER_POS = {
+    'Title': (WIN_WIDHT / 2, WIN_HEIGHT / 4),  # Posição centralizada para o título "Game Over"
+    'OptionX': WIN_WIDHT / 2,  # Posição horizontal das opções
+    'OptionY': WIN_HEIGHT / 2  # Posição inicial vertical das opções
+}
+
+# Opções do menu de Game Over (como restart e sair)
+MENU_OPTION_GAMEOVER = ['Restart', 'Exit']
+
+# Constantes para o nível 1
+ENEMY_SPEED_LEVEL_1 = 7
+ENEMY_DAMAGE_LEVEL_1 = 7
+TIMEOUT_LEVEL_1 = 30000  # 30 segundos
+
+# Constantes para o nível 2
+ENEMY_SPEED_LEVEL_2 = 9
+ENEMY_DAMAGE_LEVEL_2 = 8
+TIMEOUT_LEVEL_2 = 25000  # 25 segundos
+
+# Constantes para o nível 3
+ENEMY_SPEED_LEVEL_3 = 10
+ENEMY_DAMAGE_LEVEL_3 = 15
+TIMEOUT_LEVEL_3 = 6000  # 60 segundos
+
+

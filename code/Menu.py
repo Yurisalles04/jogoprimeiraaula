@@ -5,13 +5,13 @@ from msilib.schema import Font
 import pygame
 from pygame import Surface, Rect
 
-from code.Const import WIN_WIDHT, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
+from code.Const import WIN_WIDHT, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW, C_BLACK
 
 
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./assets/MenuBg.png').convert_alpha()
+        self.surf = pygame.image.load('./assets/Menu.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self):
@@ -23,8 +23,8 @@ class Menu:
             # Corrigido: uso correto de argumentos sem anotações de tipo
             self.menu_text(
                 text_size=50,
-                text="Corinthians game",
-                text_color=C_ORANGE,  # Corrigido: usa = em vez de :
+                text="COSMO CLASH",
+                text_color=C_BLACK,  # Corrigido: usa = em vez de :
                 text_center_pos=((WIN_WIDHT / 2), 70)  # Corrigido: usa = e adiciona parênteses corretos
             )
 
@@ -33,7 +33,7 @@ class Menu:
                     self.menu_text(
                         text_size=20,
                         text=MENU_OPTION[i],
-                        text_color=C_YELLOW,  # Corrigido: usa = em vez de :
+                        text_color=C_BLACK,  # Corrigido: usa = em vez de :
                         text_center_pos=((WIN_WIDHT / 2), 200 + 25 * i)
                         # Corrigido: usa = e adiciona parênteses corretos
                     )
