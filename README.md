@@ -56,18 +56,17 @@ Inicie o Jogo:
 python main.py
 
 Controles do Jogo
+Player1 Movimento: Teclas de setas 
+Atirar: Ctrl da direita
 
-Movimento: Teclas de setas ou W, A, S, D
 
-Atirar: Barra de espaço
+Player2 Movimento: W, A, S, D
 
-Pausar: Tecla P
+Atirar: Ctrl da esquerda
 
 Estrutura do Banco de Dados
 
 O banco de dados SQLite3 salva os seguintes dados:
-
-mode (TEXT: "Sozinho", "Competitivo", "Cooperativo")
 
 date (TEXT, data e hora do score)
 
