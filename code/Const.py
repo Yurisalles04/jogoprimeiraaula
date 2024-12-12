@@ -68,9 +68,9 @@ ENTITY_HEALTH = {
     'Level3Bg4': 999,
     'Level3Bg5': 999,
 
-    'Player1': 300,
+    'Player1': 250,
     'Player1Shot': 1,
-    'Player2': 300,
+    'Player2': 250,
     'Player2Shot': 1,
     'Enemy1': 50,
     'Enemy1Shot': 1,
@@ -157,7 +157,7 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
 TIMEOUT_STEP = 100
 TIMEOUT_LEVEL = 50000
 # S
-SPAWN_TIME = 1200
+SPAWN_TIME = 1500
 
 SCORE_POS = {
     'Title': (WIN_WIDHT / 2, 50),
@@ -203,6 +203,6 @@ TIMEOUT_LEVEL_2 = 25000  # 25 segundos
 # Constantes para o nível 3
 ENEMY_SPEED_LEVEL_3 = 10
 ENEMY_DAMAGE_LEVEL_3 = 15
-TIMEOUT_LEVEL_3 = 6000  # 60 segundos
+TIMEOUT_LEVEL_3 = 60000  # 60 segundos
 
 
