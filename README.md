@@ -1,87 +1,86 @@
-🚀 Cosmo Clash Shooter - Jogo de Arcade Espacial
-Cosmo Clash Shooter é um jogo de arcade retro onde o jogador assume o controle de uma nave espacial para enfrentar ondas de inimigos em uma batalha intergaláctica. O jogo apresenta diferentes modos de jogo, com níveis progressivos de dificuldade e um sistema de pontuação que grava automaticamente as pontuações em um banco de dados SQLite3.
+🚀 Cosmo Clash Shooter - Space Arcade Game
+Cosmo Clash Shooter is a retro arcade game where the player controls a spaceship to face waves of enemies in an intergalactic battle. The game features different game modes, with progressively harder levels and a scoring system that automatically saves scores in an SQLite3 database.
 
-🎮 Modos de Jogo
-1. Modo Sozinho
-No Modo Sozinho, o jogador enfrenta ondas de inimigos em três níveis, com aumento de dificuldade conforme o progresso:
+🎮 Game Modes
 
-Nível 1:
+Solo Mode
+In Solo Mode, the player faces waves of enemies in three levels, with increasing difficulty as the player progresses:
 
-Velocidade: 7
-Dano: 7
-Tempo limite: 30 segundos
-Nível 2:
+Level 1:
+Speed: 7
+Damage: 7
+Time limit: 30 seconds
+Level 2:
+Speed: 9
+Damage: 8
+Time limit: 25 seconds
+Level 3:
+Speed: 10
+Damage: 15
+Time limit: 60 seconds
+Competitive Mode
+In Competitive Mode, two players compete to get the highest score. Both face the same waves of enemies and can perform attack and defense actions to defeat them more quickly.
 
-Velocidade: 9
-Dano: 8
-Tempo limite: 25 segundos
-Nível 3:
+Cooperative Mode
+In Cooperative Mode, two players collaborate to defeat enemies together, with a joint score. Cooperation between players is essential to maximize the score and survival.
 
-Velocidade: 10
-Dano: 15
-Tempo limite: 60 segundos
-2. Modo Competitivo
-Aqui, dois jogadores competem para obter o maior score. Ambos enfrentam as mesmas ondas de inimigos e podem realizar ações de ataque e defesa para derrotá-los mais rapidamente.
+🔧 Main Features
 
-3. Modo Cooperativo
-No Modo Cooperativo, dois jogadores colaboram para derrotar inimigos juntos, com um score conjunto. A colaboração entre os jogadores é essencial para maximizar a pontuação e a sobrevivência.
+Score Recording: Scores are automatically saved in an SQLite3 database, allowing players to track their progress and improve performance over time.
+Dynamic Gameplay: Quick and precise controls for a smooth and challenging arcade experience.
+Retro Graphics: Classic arcade-style visuals with pixelated graphics that bring back the nostalgia of old-school games.
+Sound Effects and Music: Immersive sound effects and a soundtrack that make the experience more exciting and engaging.
+💻 Installation Instructions
 
-🔧 Funcionalidades Principais
-Gravação de Scores: As pontuações são salvas automaticamente em um banco de dados SQLite3, permitindo acompanhar seu progresso e melhorar seu desempenho ao longo do tempo.
-Jogabilidade Dinâmica: Controles rápidos e precisos para uma experiência arcade fluida e desafiadora.
-Gráficos Retro: Visual estilo arcade clássico, com gráficos pixelados que resgatam a nostalgia dos jogos antigos.
-Sons e Trilha Sonora: Efeitos sonoros imersivos e trilha sonora que tornam a experiência mais emocionante e envolvente.
-💻 Instruções de Instalação
-Requisitos do Sistema
-Python 3.10 ou superior
-Biblioteca: pygame para gráficos e sons
-Passos para Instalar e Rodar
-Instalar as Dependências
+System Requirements
 
-Para instalar as dependências necessárias, execute o seguinte comando:
+Python 3.10 or higher
+Library: pygame for graphics and sound
+Installation Steps
+
+Install Dependencies
+To install the required dependencies, run the following command:
 
 bash
 Copiar
 pip install pygame
-Clonar o Repositório
-
-Clone o repositório do jogo para sua máquina local:
+Clone the Repository
+Clone the game's repository to your local machine:
 
 bash
 Copiar
-git clone https://github.com/Yurisalles04/jogoprimeiraaula
+git clone https://github.com/Yurisalles04/jogoprimeiraaula  
 cd arcade-space-shooter
-Iniciar o Jogo
-
-Após instalar as dependências e clonar o repositório, basta rodar o seguinte comando para iniciar o jogo:
+Start the Game
+After installing the dependencies and cloning the repository, run the following command to start the game:
 
 bash
 Copiar
 python main.py
-O jogo será iniciado e você poderá jogar no seu terminal ou IDE preferida!
+The game will start, and you can play it in your terminal or preferred IDE!
 
-🎮 Controles do Jogo
-Player 1 (Jogador 1):
+🎮 Game Controls
 
-Movimento: Use as setas do teclado (↑, ↓, ←, →)
-Atirar: Pressione Ctrl da direita
-Player 2 (Jogador 2):
+Player 1 (Player 1):
+Movement: Use the arrow keys (↑, ↓, ←, →)
+Shoot: Press the right Ctrl key
+Player 2 (Player 2):
+Movement: Use the W, A, S, D keys
+Shoot: Press the left Ctrl key
+🗃️ Database Structure
+The SQLite3 database stores the following information for each score:
 
-Movimento: Use as teclas W, A, S, D
-Atirar: Pressione Ctrl da esquerda
-🗃️ Estrutura do Banco de Dados
-O banco de dados SQLite3 armazena as seguintes informações para cada score:
+Field | Description
+date | Date and time the score was recorded
+score | Player’s score
+The table is used to record scores and track player progress over time.
 
-Campo	Descrição
-date	Data e hora do score registrado
-score	Pontuação do jogador
-A tabela é usada para registrar as pontuações e acompanhar o progresso dos jogadores ao longo do tempo.
+🚀 Future Improvements
+We are constantly working to improve Cosmo Clash Shooter. Some planned improvements include:
 
-🚀 Melhorias Futuras
-Estamos constantemente trabalhando para melhorar Cosmo Clash Shooter. Algumas das melhorias planejadas incluem:
+Adding new ships and weapons to diversify gameplay.
+A global ranking system so players can compare their scores with others worldwide.
+An achievement system to reward players based on their performance and skills in the game.
+📅 Versions
 
-Adição de novas naves e armas para diversificar a jogabilidade.
-Sistema de classificações globais para que os jogadores possam comparar seus scores com outros ao redor do mundo.
-Sistema de conquistas para recompensar os jogadores com base em suas performances e habilidades no jogo.
-📅 Versões
-v1.0: Lançamento inicial com modos de jogo básicos e funcionalidades principais.
+v1.0: Initial release with basic game modes and main features.
